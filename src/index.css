@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* ---------- Design tokens: change colours / fonts here ---------- */
+@theme {
+  --color-cream: #fbf6ee;
+  --color-paper: #fffdf9;
+  --color-ink: #1b2230;
+  --color-mute: #667085;
+  --color-sky: #a9d6ef;
+  --color-skydeep: #2f7fae;
+  --color-butter: #eef3a8;
+  --color-blush: #f7d9cf;
+  --color-sand: #ece2d4;
+  --color-forest: #1f4633;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-hand: "Caveat", "Segoe Script", cursive;
+
+  --shadow-soft: 0 1px 2px rgb(27 34 48 / 0.04), 0 8px 24px -12px rgb(27 34 48 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(27 34 48 / 0.05), 0 24px 48px -20px rgb(27 34 48 / 0.28);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-sky);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-skydeep);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Hand-drawn style underline used under key words */
+.squiggle {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C 20 2, 35 11, 55 6 S 95 3, 118 7' fill='none' stroke='%23a9d6ef' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.32em;
+  padding-bottom: 0.12em;
+}
+
+/* Subtle dotted texture for placeholder media + paper panels */
+.dots {
+  background-image: radial-gradient(rgb(27 34 48 / 0.09) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
