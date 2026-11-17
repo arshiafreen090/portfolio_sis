@@ -12,7 +12,7 @@ export const profile = {
     'Blending creativity, AI-powered content and strategic thinking to create content that connects, engages and grows.',
   heroImage: '', // e.g. 'images/sabiha-hero.jpg' (portrait, around 3:4)
   aboutImage: '', // e.g. 'images/sabiha-about.jpg' (around 4:5)
-  resumeUrl: 'documents/resume-placeholder.pdf',
+  resumeUrl: '/documents/sabiha_resume (1).pdf',
 }
 
 // The order here is the order of the process strip under the hero.

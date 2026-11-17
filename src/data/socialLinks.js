@@ -16,7 +16,7 @@ export const profile = {
   aboutImage: "", // optional still image; the video below is used when set
   aboutVideo: "/videos/about-collage.mp4", // muted, looping animation
   aboutVideoPoster: "/images/about-collage-poster.jpg",
-  resumeUrl: "#", // e.g. "/documents/sabiha-resume.pdf"
+  resumeUrl: "/documents/sabiha_resume (1).pdf",
   footerTagline: "Made with creativity, curiosity & a little bit of strategy.",
 };
 
